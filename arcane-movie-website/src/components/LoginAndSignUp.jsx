@@ -65,7 +65,7 @@ const LoginAndSignUp = () => {
     <div className="auth-main">
       <div className="auth-container">
         <h2>{isSignUp ? "Create an Account" : "Welcome back!"}</h2>
-        <p>
+        <p className="SignUp-info">
           {isSignUp
             ? "Please enter your details to sign up"
             : "Please enter your details to log in"}

@@ -114,7 +114,9 @@ button[type="submit"]:hover, .toggle-auth:hover {
   color: var(--WHITE); 
 }
 
-
+.SignUp-info{
+  color: var( --MUSTARD);  
+}
 
 
 
