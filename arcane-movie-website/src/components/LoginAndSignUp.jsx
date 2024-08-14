@@ -12,7 +12,7 @@ const LoginAndSignUp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Logic will be added later
+    
   };
 
   return (
