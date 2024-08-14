@@ -1,0 +1,33 @@
+:root {
+   --WOODSY-BROWN: #36251B;
+   --RICH-RED:#9C441F;
+   --FINCH:#646544;
+   --MALIBU-SUN: #FFF3DA;
+   --VELVET-FOREST: #1E3226;
+   --WHITE: #FFFFFF;
+   --BLACK: #000000;
+   --SILVER: #C0C0C0;
+   --GARNET: #76290B;
+   --COPPER: #C27E35;
+   --MUSTARD: #CCB363;
+   --EGG-NOG:#FBEDC3;
+}
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ html {
+   font-size: 10px;
+ }
+ 
+ body {
+   font-family: "Poppins", sans-serif;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f0f0f0;
+ }
+ 
