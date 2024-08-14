@@ -7,19 +7,51 @@ const LoginAndSignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
-  const [isSignUp, setIsSignUp] = useState(false);
+  const [isSignUp, setIsSignUptus] = useState(false);
 //   const [loginError, setLoginError] = useState("");
 //   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    
-  };
+const handleSubmit = (event) => {
+   event.preventDefault();
+ 
+   if (isSignUp) {
+     const userData = { name, email, password };
+ 
+     fetch("http://localhost:5000/users", {
+       method: "POST",
+       headers: { "Content-Type": "application/json" },
+       body: JSON.stringify(userData),
+     })
+       .then((response) => response.json())
+       .then(() => {
+         navigate("/home");
+       })
+       .catch((error) => console.error("Error registering user:", error));
+   } else {
+     fetch("http://localhost:5000/users")
+       .then((response) => response.json())
+       .then((users) => {
+         const user = users.find((u) => u.email === email && u.password === password);
+ 
+         if (user) {
+           setLoginError("");
+           alert("Login successful!");
+           navigate("/home");
+         } else {
+           setLoginError("Invalid email or password");
+         }
+       })
+       .catch((error) => {
+         console.error("Error during login:", error);
+         setLoginError("An error occurred. Please try again.");
+       });
+   }
+ };
 
   return (
    <div className="auth-main">
      <div className="auth-container">
-       {/* existing structure */}
+      
        <form onSubmit={handleSubmit}>
          {isSignUp && (
            <input
