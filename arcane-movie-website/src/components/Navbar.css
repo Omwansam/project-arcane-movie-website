@@ -1,0 +1,66 @@
+:root {
+    --WOODSY-BROWN: #36251B;
+    --RICH-RED:#9C441F;
+    --FINCH:#646544;
+    --MALIBU-SUN: #FFF3DA;
+    --VELVET-FOREST: #1E3226;
+    --WHITE: #FFFFFF;
+    --BLACK: #000000;
+    --SILVER: #C0C0C0;
+    --GARNET: #76290B;
+    --COPPER: #C27E35;
+    --MUSTARD: #CCB363;
+    --EGG-NOG:#FBEDC3;
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--WOODSY-BROWN);
+}
+.navbar ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    border: 1px solid var(--GARNET);
+
+}
+
+.navbar ul li {
+    position: relative;
+    margin-right: 20px;
+    padding: 10px;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--MALIBU-SUN);
+    cursor: pointer;
+    transition: 0.3s ease; 
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color: var(--COPPER);
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li a.active::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    width: 50%;
+    height: 2px;
+    background-color: var(--COPPER);
+    transition:  0.3s 
+}
