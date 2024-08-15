@@ -62,7 +62,9 @@ const LoginAndSignUp = () => {
   };
 
   return (
-    <div className="auth-main">
+    
+    <div className="auth-wrapper">
+      <div className="auth-main">
       <div className="auth-container">
         <h2>{isSignUp ? "Create an Account" : "Welcome back!"}</h2>
         <p className="SignUp-info">
@@ -116,6 +118,7 @@ const LoginAndSignUp = () => {
             : "Don't have an account? Sign Up"}
         </button>
       </div>
+    </div>
     </div>
   );
 };
