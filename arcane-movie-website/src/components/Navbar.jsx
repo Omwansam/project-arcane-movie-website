@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     // one can perform any additional logout logic in this function (e.g., clearing user session)
-    navigate('/login'); // Redirect to the login/signup page
+    navigate('/login'); // Redirect to the login/sign up page
   };
 
   return (
