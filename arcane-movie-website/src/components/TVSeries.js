@@ -31,7 +31,7 @@ function TVSeries() {
     <div className="tv-series">
       <h1>TV Series</h1>
       <div className="series-grid">
-        {series.map(s => (
+        {series.map(s => ( 
           <SeriesCard 
             key={s.id} 
             series={s} 
