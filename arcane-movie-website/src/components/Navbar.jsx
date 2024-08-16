@@ -1,34 +1,43 @@
-import React from 'react'
-import './Navbar.css'
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
+import './Navbar.css';
+
 const Navbar = () => {
-return (
-    < header>
-    <div className='container'>
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // one can perform any additional logout logic in this function (e.g., clearing user session)
+    navigate('/login'); // Redirect to the login/signup page
+  };
+
+  return (
+    <header>
+      <div className='container'>
         <div className='logo'>
-    <a href="https://github.com/">
-        <h1>Arcane</h1>
-    </a>
-    </div>
-    <nav className='navbar' >
-            <ul>
-                <li><a href='#' className='active'>Home</a></li>
-                <li><a href='#'>Movies</a></li>
-                <li><a href='#'>Tv Series</a></li>
-                <li><a href='#'>Events</a></li>
-                <li><a href='#'>Login</a></li>
-            </ul>
-    </nav>
-
-    <div className='searchbox'>
-    <i class=" search-icon fa fa-search" aria-hidden="true"></i>
-        <input type="text" name='search' placeholder="Search"/>
-    </div>
-
-   <button className='btn' >Subscribe</button>
-
+          <a href="https://github.com/">
+            <h1>Arcane</h1>
+          </a>
         </div>
-        </header>
-)
+        <nav className='navbar'>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/tv-series">TV Series</Link></li>
+            <li><Link to="/movies">Movies</Link></li>
+            <li><Link to="/about">Events</Link></li>
+            <li><button className='logout-btn' onClick={handleLogout}>Logout</button></li>
+          </ul>
+        </nav>
+
+        <div className='searchbox'>
+          <i className="search-icon fa fa-search" aria-hidden="true"></i>
+          <input type="text" name='search' placeholder="Search" />
+        </div>
+
+        <button className='btn'>Subscribe</button>
+      </div>
+    </header>
+  );
 }
 
 export default Navbar;
