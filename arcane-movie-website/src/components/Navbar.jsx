@@ -21,7 +21,6 @@ const Navbar = () => {
         </div>
         <nav className='navbar'>
           <ul>
-          <li><Link to="/">Home</Link></li>
             <li><Link to="/home">Home</Link></li>
             <li><Link to="/tvSeries">TV Series</Link></li>
             <li><Link to="/movie">Movies</Link></li>
