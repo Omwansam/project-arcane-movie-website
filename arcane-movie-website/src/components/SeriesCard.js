@@ -17,3 +17,4 @@ function SeriesCard({ series, onBuyTicket }) {
 }
 
 export default SeriesCard;
+

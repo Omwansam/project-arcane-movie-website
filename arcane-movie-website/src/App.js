@@ -1,10 +1,13 @@
-// b9cc5a2b  OMBb API KEY
-import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import TVSeries from './components/TVSeries';
-// Import other components as needed
+
+// Create placeholder components for other pages
+const Home = () => <div>Home Page</div>;
+const Movies = () => <div>Movies Page</div>;
+const Events = () => <div>Events Page</div>;
+const Login = () => <div>Login Page</div>;
 
 function App() {
   return (
