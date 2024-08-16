@@ -1,0 +1,35 @@
+.tv-series {
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+  }
+  
+  .tv-series h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  .series-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 1200px) {
+    .series-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .series-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .series-grid {
+      grid-template-columns: 1fr;
+    }
+  }
