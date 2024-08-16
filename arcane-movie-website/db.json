@@ -5,6 +5,12 @@
       "email": "adm@qwe",
       "password": "1234",
       "id": 1
+    },
+    {
+      "name": "arcane",
+      "email": "arcane@qwe",
+      "password": "1234",
+      "id": 2
     }
   ]
 }
