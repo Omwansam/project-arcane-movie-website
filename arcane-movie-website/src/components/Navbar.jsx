@@ -10,13 +10,13 @@ return (
     </a>
     </div>
     <nav className='navbar' >
-            <ul>
-                <li><a href='#' className='active'>Home</a></li>
-                <li><a href='#'>Movies</a></li>
-                <li><a href='#'>Tv Series</a></li>
-                <li><a href='#'>Events</a></li>
-                <li><a href='#'>Login</a></li>
-            </ul>
+    <ul>
+            <li><Link to="/" className='active'>Home</Link></li>
+            <li><Link to="/movies">Movies</Link></li>
+            <li><Link to="/tv-series">Tv Series</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/login">Login</Link></li>
+   </ul>
     </nav>
 
     <div className='searchbox'>
