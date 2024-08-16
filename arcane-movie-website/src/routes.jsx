@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "./App";
-import Home from "./components/Home";
-// import TvSeries from "./components/TvSeries";
-// import Movies from "./components/Movies";
-// import About from "./components/About";
+// import Home from "./components/Home";
+import  LatestMovies from "./components/LatestMovies";
+import Movie from "./components/Movie";
+import TVSeries from "./components/TVSeries";
 // import Contact from "./components/Contact";
 import LoginAndSignUp from "./components/LoginAndSignUp";
 
@@ -16,11 +16,11 @@ const AppRoutes = () => {
        
        {/* Route for the main app pages */}
        <Route path="/" element={<App />}>
-         <Route path="home" element={<Home />} />
-         {/* <Route path="tv-series" element={<TvSeries />} />
-         <Route path="movies" element={<Movies />} />
-         <Route path="about" element={<About />} />
-         <Route path="contact" element={<Contact />} /> */}
+         {/* <Route path="home" element={<Home />} /> */}
+         <Route path="home" element={< LatestMovies />} />
+         <Route path="movie" element={<Movie />} />
+         <Route path="tvSeries" element={<TVSeries />} />
+         {/* <Route path="contact" element={<Contact />} /> */}
        </Route>
      </Routes>
    );

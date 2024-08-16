@@ -11,6 +11,18 @@
       "email": "arcane@qwe",
       "password": "1234",
       "id": 2
+    },
+    {
+      "name": "mimi",
+      "email": "adm@qwer1",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "mimi",
+      "email": "adm@qwer1",
+      "password": "1234",
+      "id": 4
     }
   ]
 }
