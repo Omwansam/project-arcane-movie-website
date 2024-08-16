@@ -1,11 +1,13 @@
 // b9cc5a2b  OMBb API KEY
-import './App.css';
-import Navbar from './components/Navbar';
+import "./App.css";
+import LoginAndSignUp from "./components/LoginAndSignUp";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
+      <LoginAndSignUp />
     </div>
   );
 }
