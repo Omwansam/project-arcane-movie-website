@@ -4,8 +4,7 @@ import './TVSeries.css';
 
 function TVSeries() {
   const [series, setSeries] = useState([]);
-
-  useEffect(() => {
+   useEffect(() => {
     const mockSeries = [
         { id: 1, title: "Stranger Things", image: "https://i.pinimg.com/236x/11/a2/23/11a223db66e5c55284693ae776664eef.jpg", price: 10, totalTickets: 100, availableTickets: 100 },
         { id: 2, title: "The Witcher", image: "https://i.pinimg.com/236x/8e/1a/1a/8e1a1a3913fd44a2188dac98602a7a81.jpg", price: 12, totalTickets: 80, availableTickets: 80 },
