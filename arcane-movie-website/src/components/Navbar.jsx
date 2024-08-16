@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import img1 from '../Assets/Hitmans.jpeg'
 
 import './Navbar.css';
 
@@ -36,6 +37,19 @@ const Navbar = () => {
 
         <button className='btn'>Subscribe</button>
       </div>
+
+      <div className='home ' id='home'>
+
+< img src={img1} alt='' className='home-img' />
+ <div className='home-text'>
+    <h1 className='home-title'>Hitman's Wife's Bodyguard</h1>
+    <p>Releasing 10 April</p>
+    <a href='#' className='watch-btn'>
+    <i class="fa fa-play " classname='fa fa-play ' aria-hidden="true"></i>
+        <span>Watch the trailer</span>
+    </a>
+ </div>
+</div>
     </header>
   );
 }
