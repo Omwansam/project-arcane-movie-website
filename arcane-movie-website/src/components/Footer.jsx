@@ -1,5 +1,5 @@
-import React from "react"
-import './Footer.css'
+import React from "react";
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -24,18 +24,18 @@ const Footer = () => {
             <i className='fab fa-instagram'></i>
           </div>
           <div className='box'>
-            <h3>Arcane  App</h3>
+            <h3>Arcane App</h3>
             <div className='img flexSB'>
-              <img src='https://img.icons8.com/color/48/000000/apple-app-store--v3.png' />
+              <img src='https://img.icons8.com/color/48/000000/apple-app-store--v3.png' alt="App Store" />
               <span>App Store</span>
-              <img src='https://img.icons8.com/fluency/48/000000/google-play.png' />
+              <img src='https://img.icons8.com/fluency/48/000000/google-play.png' alt="Google Play Store" />
               <span>Google Play Store</span>
             </div>
           </div>
         </div>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
