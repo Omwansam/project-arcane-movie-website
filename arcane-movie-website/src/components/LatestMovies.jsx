@@ -58,7 +58,7 @@ const moviesData = {
       "Language": "English",
       "Country": "United States",
       "Awards": "Won 4 Oscars. 152 wins & 218 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMjAxNzAzNTY3Ml5BMl5BanBnXkFtZTcwNTkzMjUyMw@@._V1_SX300.jpg",
+      "Poster": "https://i.pinimg.com/736x/fa/20/85/fa2085a086003ebe5cccafeeeaf9952e.jpg",
       "Ratings": [
         {
           "Source": "Internet Movie Database",

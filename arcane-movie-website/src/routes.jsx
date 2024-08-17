@@ -16,7 +16,7 @@ const AppRoutes = () => {
        
        {/* Route for the main app pages */}
         <Route path="/" element={<App />}>
-         <Route path="home" element={< LatestMovies />} />
+         <Route path="/" element={< LatestMovies />} />
          <Route path="movie" element={<Movie />} />
          <Route path="tvSeries" element={<TVSeries />} />
          {/* <Route path="contact" element={<Contact />} /> */}

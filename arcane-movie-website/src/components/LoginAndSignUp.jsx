@@ -33,7 +33,7 @@ const LoginAndSignUp = () => {
         .then((response) => response.json())
         .then((data) => {
           console.log("User registered:", data);
-          navigate("/home");
+          navigate("/");
         })
         .catch((error) => console.error("Error registering user:", error));
     } else {
@@ -47,7 +47,7 @@ const LoginAndSignUp = () => {
           if (user) {
             setLoginError("");
             alert("Login successful!");
-            navigate("/home");
+            navigate("/");
           } else {
             setLoginError("Invalid email or password");
           }
