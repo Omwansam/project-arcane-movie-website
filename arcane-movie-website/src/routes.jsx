@@ -5,7 +5,7 @@ import App from "./App";
 import  LatestMovies from "./components/LatestMovies";
 import Movie from "./components/Movie";
 import TVSeries from "./components/TVSeries";
-
+import Events from "./components/Events";
 import LoginAndSignUp from "./components/LoginAndSignUp";
 
 const AppRoutes = () => {
@@ -19,7 +19,7 @@ const AppRoutes = () => {
          <Route path="/" element={< LatestMovies />} />
          <Route path="movie" element={<Movie />} />
          <Route path="tvSeries" element={<TVSeries />} />
-         {/* <Route path="contact" element={<Contact />} /> */}
+         <Route path="events" element={<Events />} />
        </Route>
      </Routes>
    );

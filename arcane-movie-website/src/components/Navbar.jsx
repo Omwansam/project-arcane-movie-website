@@ -24,7 +24,7 @@ const Navbar = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/tvSeries">TV Series</Link></li>
             <li><Link to="/movie">Movies</Link></li>
-            <li><Link to="/about">Events</Link></li>
+            <li><Link to="/events">Events</Link></li>
             <li><button className='logout-btn' onClick={handleLogout}>Logout</button></li>
           </ul>
         </nav>
