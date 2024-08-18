@@ -1,6 +1,12 @@
 .movie-poster {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 200px;
+  padding: 15px;
   text-align: center;
+  transition: transform 0.2s ease;
 }
 
 .movie-poster img {
@@ -27,11 +33,4 @@
 
 .ticket-button:hover {
   background-color: #76290B;
-}
-
-.ticket-data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
 }
