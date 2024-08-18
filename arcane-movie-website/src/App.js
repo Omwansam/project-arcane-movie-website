@@ -16,6 +16,7 @@
 import React from "react";
 import { useLocation, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       {location.pathname !== "/login" && <Navbar />}
       <Outlet />
+      {location.pathname !== "/signup" && <Footer />}
     </div>
   );
 }

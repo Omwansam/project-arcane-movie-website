@@ -44,10 +44,12 @@
 }
 
 .ticket-button:hover {
+
   background-color: var(--GARNET);
 }
 
 .price {
   font-size: 1em;
   color: var(--RICH-RED);
+
 }
