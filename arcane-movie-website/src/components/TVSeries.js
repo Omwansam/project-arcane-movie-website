@@ -36,8 +36,10 @@ function TVSeries() {
 
   return (
     <div className="tv-series">
-      <header className='header'></header>
-        <h1>TV Series</h1>
+      <header className='header'>
+      <h1>TV Series</h1>
+      </header>
+       
       <div className="series-grid">
         {series.map(s => ( 
           <SeriesCard 
