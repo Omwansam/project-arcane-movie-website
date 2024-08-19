@@ -1,0 +1,103 @@
+
+:root {
+    --WOODSY-BROWN: #36251B;
+    --RICH-RED:#9C441F;
+    --FINCH:#646544;
+    --MALIBU-SUN: #FFF3DA;
+    --VELVET-FOREST: #1E3226;
+    --WHITE: #FFFFFF;
+    --BLACK: #000000;
+    --SILVER: #C0C0C0;
+    --GARNET: #76290B;
+    --COPPER: #C27E35;
+    --MUSTARD: #CCB363;
+    --EGG-NOG:#FBEDC3;
+}
+.HeroContainer{
+    position: relative;
+    height: 90vh;
+    display:flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    /*padding-top: 10px; */
+
+}
+.hero-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 0.5rem;
+}
+
+.Hero-text{
+    padding-left: 40px;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 80%;*/
+}
+.Hero-title{
+    font-size: 5rem;
+    color: var(--WOODSY-BROWN);
+    font-weight: 600;
+   /* font-size: 3.5rem;
+    color: var(--WOODSY-BROWN);
+    font-weight: bold; */
+}
+.Hero-text p{
+    font-size: 3.5rem;
+    margin: 10px 0 20px;
+    line-height: 1.8;
+    color: var(--FINCH);
+}
+.watch-btn{
+    
+    display: flex;
+    align-items: center;
+    color: var(--VELVET-FOREST);
+    padding: 10px 20px;
+    column-gap: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.watch-btn .fa{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background: var(transparent);
+   width:40px ;
+   height: 40px;
+   
+   padding: 20px 10px;
+   border-radius: 50%;
+   border: 1px solid var(--VELVET-FOREST);
+   
+}
+.watch-btn .fa:hover{
+    background: var(--GARNET);
+    color: var(--WHITE);
+}
+ a{
+    text-decoration: none;
+}
+.watch-btn span {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--GARNET);
+    
+}
+
+

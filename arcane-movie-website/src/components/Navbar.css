@@ -17,6 +17,7 @@
 .container{
     display: flex;
     width: 100%;
+    padding: 10px 20px 10px 20px;
     align-items: center;
     justify-content: space-between;
     background: var(--WOODSY-BROWN);
@@ -24,9 +25,9 @@
 .logo a{
     color: var(--MALIBU-SUN);
     font-weight: 800;
-    text-decoration: none;
+    text-decoration:none;
     font-size: 16px;
-   letter-spacing: 1.5px;
+   letter-spacing: 1.5px;font-style: italic;
 }
 .navbar ul {
     position: relative;
@@ -35,7 +36,7 @@
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    border: 1px solid var(--GARNET);
+    
 
 }
 

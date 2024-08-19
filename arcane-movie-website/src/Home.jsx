@@ -1,8 +1,13 @@
 import React from 'react'
+import LandingPage from './components/LandingPage'
+import  LatestMovies from "./components/LatestMovies";
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <LandingPage />
+      <LatestMovies/>
+    </div>
   )
 }
 
