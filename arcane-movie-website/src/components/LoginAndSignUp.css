@@ -1,5 +1,5 @@
 
- :root {
+:root {
   --WOODSY-BROWN: #36251B;
   --RICH-RED: #9C441F;
   --FINCH: #646544;
@@ -34,6 +34,7 @@ html {
   background-image: url('https://img.freepik.com/free-vector/movie-time-cinema-film-strip-background_1017-36653.jpg?size=626&ext=jpg');
   background-size: cover;
   background-position: center;
+  background-color: var(--MALIBU-SUN);
 }
 
 .auth-main {
@@ -41,7 +42,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--WHITE);
+  background-color: var(--MALIBU-SUN);
   padding: 40px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
@@ -131,11 +132,11 @@ button[type="submit"]:hover, .toggle-auth:hover {
 }
 
 .SignUp-info {
-  color: var(--VELVET-FOREST);
+  color: var(--BLACK);
   text-align: center;
   margin-top: 20px;
   border: 1px solid var(--SILVER);
   padding: 10px;
   border-radius: 4px;
-  background-color: var(--EGG-NOG);
+  background-color: var(--FINCH);
 }
