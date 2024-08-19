@@ -17,7 +17,7 @@ import React from "react";
 import { useLocation, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import LandingPage from "./components/LandingPage";
+// import LandingPage from "./components/LandingPage";
 import "./App.css";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       {location.pathname !== "/login" && <Navbar />}
-      
+
       <Outlet />
       {location.pathname !== "/signup" && <Footer />}
     </div>
@@ -34,6 +34,5 @@ function App() {
 }
 
 export default App;
-
 
 // {location.pathname !=="/ " && <LandingPage />}
